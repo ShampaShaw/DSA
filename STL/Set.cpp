@@ -60,3 +60,11 @@ void explainMultiSet() {
     ms.erase(ms.find(1), ms.find(1) + 2); //find element 1 and go till 2
 
 }
+
+void explainUSet() {
+    unordered_set<int> st;
+    //lower_bound and upper_bound function does not works, rest function are same
+    //as above , it does not store in any particular order
+    //it has a better complexity than set in most cases, except some when collision happens
+
+}
