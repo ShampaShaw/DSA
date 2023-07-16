@@ -44,8 +44,12 @@ void explainMap() {
     //unique key but not sorted
    }
 
-   bool comp(pair<int, int>p1, pair<int, int>p2) {
-        if(p1.second < p2.second) {
+
+
+  //my way of sorting
+
+   bool comp(pair<int, int>p1, pair<int, int>p2) { //comp(comperetor) said they are in the correct order or not
+        if(p1.second < p2.second)/*sort accod=rding to 2nd element*/ { 
             return true;
         } else if(p1.second == p2.second){
             if(p1.first>p2.first) return true;
